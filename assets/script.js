@@ -27,13 +27,36 @@ const slides = [
 
 
 
+let btnPrecedent = null;
 let numero = 0;
 
 //demarrage du script
 window.onload = function()
 {
 	console.log("demarrage");
+
+	btnPrecedent = document.getElementById("precedent");
+	btnPrecedent.addEventListener
+	(
+		"click", 
+		function()
+		{
+			ChangeSlide(-1);
+		}
+	);
+
+	btnPrecedent = document.getElementById("suivant");
+	btnPrecedent.addEventListener
+	(
+		"click", 
+		function()
+		{
+			ChangeSlide(1);
+		}
+);
+
 };
+
 
 
 // fonction executé lorsqu'on clique sur une flèche carousel
@@ -61,18 +84,6 @@ function ChangeSlide(sens)
 		if(index == numero)
 			points[index].classList.add("dot_selected");
 	}
-
-	// let slideIndex = 1;
-	// showSlides(slideIndex);
-
-	// function showSlides(n) {
-
-	// 	let i;
-	// 	let dots = document.getElementsByClassName('dot');
-
-	// 	if (n > slides.length) { slideIndex = 1}
-		
-	// }
 
 
 }
