@@ -18,15 +18,9 @@ const slides = [
 		tagLine:"Autocollants <span>avec découpe laser sur mesure</span>",
 	}
 
-
-		// "slide1.jpg", "slide2.jpg", "slide3.jpg", "slide4.png",
-
 ];
 
-// document.querySelector("html").style.backgroundColor = "purple";
-
-
-
+// déclaration des variables
 let btnPrecedent = null;
 let numero = 0;
 
@@ -53,7 +47,7 @@ window.onload = function()
 		{
 			ChangeSlide(1);
 		}
-);
+	);
 
 };
 
